@@ -16,7 +16,6 @@ def encrypt(text, shift):
         encrypted += alphabet[new_letter_index]
     print(f"The encoded text is: {encrypted}")
 
-
 def decrypt(text, shift):
     decrypted = ""
     for letter in text:
