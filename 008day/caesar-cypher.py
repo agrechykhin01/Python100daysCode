@@ -24,7 +24,7 @@ def decrypt(text, shift):
         if new_letter_index < 0:
             new_letter_index = len(alphabet) - ((-(new_letter_index)) % (len(alphabet) - 1))
         decrypted += alphabet[new_letter_index]
-    print(f"The encoded text is: {decrypted}")
+    print(f"The decoded text is: {decrypted}")
 
 # TODO-2: Inside the 'encrypt' function, shift each letter of the 'text' forwards in the alphabet by the shift amount and print the encrypted text.
 # e.g.
