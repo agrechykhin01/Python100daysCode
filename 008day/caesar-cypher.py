@@ -21,7 +21,7 @@ def decrypt(text, shift):
         letter_index = alphabet.index(letter)
         new_letter_index = letter_index - shift
         if new_letter_index < 0:
-            new_letter_index = len(alphabet) - ((-(new_letter_index)) % (len(alphabet) - 1))
+            new_letter_index = len(alphabet) - ((-new_letter_index) % (len(alphabet) - 1))
         decrypted += alphabet[new_letter_index]
     print(f"The decoded text is: {decrypted}")
 
